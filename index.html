@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <title>أهم المقالات عن البرمجة</title>
+    <style>
+        /* إعدادات عامة */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            direction: rtl;
+            color: #333;
+        }
+
+        h1, h2, h3 {
+            color: #007bff;
+        }
+
+        /* التصميم العام للرأس */
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 26px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* التصميم العام للمحتوى */
+        main {
+            margin: 20px;
+            max-width: 1200px;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* تنسيق المقالات */
+        article {
+            background-color: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        article:hover {
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            transform: translateY(-5px);
+        }
+
+        article h2 {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        article p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .back-btn {
+            color: red;
+            display: block;
+            margin-top: 20px;
+        }
+
+        /* تصميم الفوتر */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            font-size: 16px;
+            margin-top: 30px;
+        }
+
+        /* تصميم الجدول للمقالات */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 30px;
+        }
+
+        table th, table td {
+            padding: 12px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        table th {
+            background-color: #007bff;
+            color: white;
+        }
+
+        /* استجابة التصميم للأجهزة المحمولة */
+        @media (max-width: 768px) {
+            header {
+                font-size: 22px;
+            }
+
+            main {
+                margin: 10px;
+            }
+
+            article {
+                padding: 15px;
+            }
+
+            footer {
+                font-size: 14px;
+            }
+        }
+
+        /* إضافة زر للتنقل السريع */
+        .navigate-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 15px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .navigate-btn:hover {
+            background-color: #0056b3;
+        }
+
+        /* إضافة تأثير للانتقال بين المقالات */
+        .content {
+            display: none;
+        }
+
+        .show {
+            display: block;
+            animation: fadeIn 0.5s ease-out;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        🖥️ أهم المقالات عن البرمجة
+    </header>
+
+    <main>
+        <!-- الصفحة الرئيسية -->
+        <section id="home">
+            <article>
+                <h2><a href="#" onclick="showArticle('article1')">📖 كيف تبدأ في تعلم البرمجة؟</a></h2>
+                <p>دليل شامل للمبتدئين في مجال البرمجة وأفضل الطرق للبدء في تعلم البرمجة خطوة بخطوة...</p>
+                <a href="#" class="navigate-btn" onclick="showArticle('article1')">قراءة المزيد</a>
+            </article>
+
+            <article>
+                <h2><a href="#" onclick="showArticle('article2')">💻 أفضل لغات البرمجة في 2025</a></h2>
+                <p>ما هي أهم اللغات البرمجية التي يجب تعلمها هذا العام؟ وكيف يمكن اختيار اللغة الأنسب للمشاريع؟...</p>
+                <a href="#" class="navigate-btn" onclick="showArticle('article2')">قراءة المزيد</a>
+            </article>
+
+            <article>
+                <h2><a href="#" onclick="showArticle('article3')">🛠️ أدوات البرمجة الأساسية لكل مبرمج</a></h2>
+                <p>تعرف على الأدوات التي لا غنى عنها لكل مبرمج حديث: من المحررات إلى بيئات التطوير المتكاملة (IDEs)...</p>
+                <a href="#" class="navigate-btn" onclick="showArticle('article3')">قراءة المزيد</a>
+            </article>
+
+            <article>
+                <h2><a href="#" onclick="showArticle('article4')">🌍 البرمجة عبر الإنترنت: لماذا وكيف؟</a></h2>
+                <p>اكتشف أهمية البرمجة عبر الإنترنت وكيف يمكن استخدامها لإنشاء تطبيقات قوية باستخدام تقنيات مثل Cloud و SaaS...</p>
+                <a href="#" class="navigate-btn" onclick="showArticle('article4')">قراءة المزيد</a>
+            </article>
+        </section>
+
+        <!-- مقالات مفصلة -->
+        <section id="article1" class="content">
+            <h2>📖 كيف تبدأ في تعلم البرمجة؟</h2>
+            <p>البرمجة هي واحدة من أكثر المهارات المطلوبة اليوم. إليك خطوات البدء في تعلم البرمجة:</p>
+            <ol>
+                <li><b>اختر لغة برمجة:</b> لغات مثل <b>Python</b> أو <b>JavaScript</b> أو <b>Css</b> أو <b>html</b> مثالية للمبتدئين.</li>
+                <li><b>دورات تعليمية:</b> استفد من المواقع التعليمية مثل <a href="https://www.codecademy.com/" target="_blank">Codecademy</a> و <a href="https://www.freecodecamp.org/" target="_blank">FreeCodeCamp</a>.</li>
+                <li><b>بناء مشاريع:</b> ابدأ ببناء مشاريع صغيرة مثل تطبيقات ويب أو أدوات بسيطة.</li>
+                <li><b>التواصل مع المجتمع:</b> انضم إلى المنتديات والمجتمعات مثل <a href="https://www.reddit.com/r/learnprogramming/" target="_blank">Reddit LearnProgramming</a>.</li>
+            </ol>
+            <a href="#" class="back-btn" onclick="showHome()">⬅ العودة إلى الصفحة الرئيسية</a>
+        </section>
+
+          <section id="article2" class="content"></center>
+            <h2>💻 أفضل لغات البرمجة في 2025</h2>
+            <p>إليك أفضل لغات البرمجة التي يجب تعلمها هذا العام:</p>
+            <ol>
+                <li><b>Html و Css و JavaScript:</b> لازالو هم اللغات الأولى لتطوير مواقع الويب.</li>
+                <li><b>Python:</b> مثالية للذكاء الاصطناعي وتحليل البيانات.</li>
+                <li><b>Go:</b> سريعة جدًا وتستخدم في تطبيقات الأنظمة الكبيرة.</li>
+                <li><b>Java:</b> لغة قوية لتطوير تطبيقات الهاتف باستخدام <b>Android Studio</b>.</li>
+            </ol>
+            <a href="#" class="back-btn" onclick="showHome()">⬅ العودة إلى الصفحة الرئيسية</a>
+        </section>
+
+        <section id="article3" class="content">
+            <h2>🛠️ أدوات البرمجة الأساسية لكل مبرمج</h2>
+            <p>إليك الأدوات التي يجب أن يمتلكها كل مبرمج:</p>
+            <ol>
+                <li><b>Git:</b> لإدارة الشيفرة المصدرية والمشاريع البرمجية باستخدام GitHub.</li>
+                <li><b>VSCode:</b> محرر نصوص قوي ومفتوح المصدر.</li>
+                <li><b>Docker:</b> أدوات لتشغيل التطبيقات في بيئات معزولة.</li>
+                <li><b>PyCharm:</b> IDE متخصص لتطوير Python.</li>
+            </ol>
+            <a href="#" class="back-btn" onclick="showHome()">⬅ العودة إلى الصفحة الرئيسية</a>
+        </section>
+
+        <section id="article4" class="content">
+            <h2>🌍 البرمجة عبر الإنترنت: لماذا وكيف؟</h2>
+            <p>اكتشف لماذا يجب أن تتعلم البرمجة عبر الإنترنت وكيف يمكنك استخدام الأدوات الحديثة لبناء التطبيقات:</p>
+            <ol>
+                <li><b>التطوير عبر الإنترنت:</b> يمكنك كتابة الأكواد على الإنترنت باستخدام بيئات مثل <b>Repl.it</b>.</li>
+                <li><b>استخدام Cloud:</b> إدارة تطبيقاتك على خدمات السحابة مثل <b>AWS</b> و <b>Azure</b>.</li>
+                <li><b>مزايا التعاون:</b> البرمجة عبر الإنترنت تسمح بالعمل الجماعي من جميع أنحاء العالم باستخدام أدوات مثل <b>GitHub</b>.</li>
+            </ol>
+            <a href="#" class="back-btn" onclick="showHome()">⬅ العودة إلى الصفحة الرئيسية</a>
+        </section>
+    </main>
+
+    <footer>
+        جميع الحقوق محفوظة © 2025
+    </footer>
+
+    <script>
+        function showArticle(articleId) {
+            document.getElementById('home').style.display = 'none';
+            document.getElementById(articleId).classList.add('show');
+        }
+
+        function showHome() {
+            document.getElementById('home').style.display = 'block';
+            document.querySelectorAll('.content').forEach(section => {
+                section.classList.remove('show');
+            });
+        }
+    </script>
+
+</body>
+</html>
